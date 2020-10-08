@@ -1,0 +1,3 @@
+monitor, 200000
+monitor2, 230000
+monitor3, 470000
