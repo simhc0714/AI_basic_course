@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_e745c8743d00480783c0a34e3affcea5 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_e745c8743d00480783c0a34e3affcea5" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_e745c8743d00480783c0a34e3affcea5 = L.map(
+        'map_e745c8743d00480783c0a34e3affcea5', {
+        center: [37.5398422, 126.9995773],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_cc9e085b86e94c1793c4bb7871b0f188 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_e745c8743d00480783c0a34e3affcea5);
+    
+        var marker_d2f26f7dc284455d9c5c15c5eceffdeb = L.marker(
+            [37.5575175, 126.9237902],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_e745c8743d00480783c0a34e3affcea5);
+        
+    
+
+                var icon_d1ba614a8ff24803b1de48dd38ebaed2 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d2f26f7dc284455d9c5c15c5eceffdeb.setIcon(icon_d1ba614a8ff24803b1de48dd38ebaed2);
+            
+    
+            var popup_1f8d83254f5f4e3cb150755425908e89 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7339cd18a2ef43488b7ec979a4078521 = $(`<div id="html_7339cd18a2ef43488b7ec979a4078521" style="width: 100.0%; height: 100.0%;">홍대</div>`)[0];
+                popup_1f8d83254f5f4e3cb150755425908e89.setContent(html_7339cd18a2ef43488b7ec979a4078521);
+            
+
+            marker_d2f26f7dc284455d9c5c15c5eceffdeb.bindPopup(popup_1f8d83254f5f4e3cb150755425908e89)
+            ;
+
+            
+        
+    
+        var marker_e10634ddcb1c4ba8b7fa193baebb771c = L.marker(
+            [37.5511736, 126.9860379],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_e745c8743d00480783c0a34e3affcea5);
+        
+    
+
+                var icon_faecdfb4df0647feb4a994f296ef0198 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'yellow',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e10634ddcb1c4ba8b7fa193baebb771c.setIcon(icon_faecdfb4df0647feb4a994f296ef0198);
+            
+    
+            var popup_e54b249345a64b9c820e3adf7e1561de = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e444fdf7d0d3455cba470a64d78e3e98 = $(`<div id="html_e444fdf7d0d3455cba470a64d78e3e98" style="width: 100.0%; height: 100.0%;">N서울타워</div>`)[0];
+                popup_e54b249345a64b9c820e3adf7e1561de.setContent(html_e444fdf7d0d3455cba470a64d78e3e98);
+            
+
+            marker_e10634ddcb1c4ba8b7fa193baebb771c.bindPopup(popup_e54b249345a64b9c820e3adf7e1561de)
+            ;
+
+            
+        
+    
+        var marker_eb85e94c642a4c138c099459e052f848 = L.marker(
+            [37.5129949, 127.1005435],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_e745c8743d00480783c0a34e3affcea5);
+        
+    
+
+                var icon_ffb1aeb6f67542c5a2813882aa774f06 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eb85e94c642a4c138c099459e052f848.setIcon(icon_ffb1aeb6f67542c5a2813882aa774f06);
+            
+    
+            var popup_e1f21473733a4f2aa27842168f0035ac = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c782b3b984f2445589f58a2e042f952e = $(`<div id="html_c782b3b984f2445589f58a2e042f952e" style="width: 100.0%; height: 100.0%;">롯데월드타워</div>`)[0];
+                popup_e1f21473733a4f2aa27842168f0035ac.setContent(html_c782b3b984f2445589f58a2e042f952e);
+            
+
+            marker_eb85e94c642a4c138c099459e052f848.bindPopup(popup_e1f21473733a4f2aa27842168f0035ac)
+            ;
+
+            
+        
+    
+        var marker_225a3dbc2b7643829204b3e4e6827cf5 = L.marker(
+            [37.5796212, 126.9748523],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_e745c8743d00480783c0a34e3affcea5);
+        
+    
+
+                var icon_7816913202ae4959855432313dc95f4b = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_225a3dbc2b7643829204b3e4e6827cf5.setIcon(icon_7816913202ae4959855432313dc95f4b);
+            
+    
+            var popup_09398b5ae3854b829709618cf610a5d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b7c8d4f9fc6746c08c2b844623144e01 = $(`<div id="html_b7c8d4f9fc6746c08c2b844623144e01" style="width: 100.0%; height: 100.0%;">경복궁</div>`)[0];
+                popup_09398b5ae3854b829709618cf610a5d9.setContent(html_b7c8d4f9fc6746c08c2b844623144e01);
+            
+
+            marker_225a3dbc2b7643829204b3e4e6827cf5.bindPopup(popup_09398b5ae3854b829709618cf610a5d9)
+            ;
+
+            
+        
+    
+        var marker_93884789594441a8bc16f4eb2b859da0 = L.marker(
+            [37.4974087, 127.0259273],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_e745c8743d00480783c0a34e3affcea5);
+        
+    
+
+                var icon_4d2ec9d6fdaf40c48bf70ce82bcd8cff = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_93884789594441a8bc16f4eb2b859da0.setIcon(icon_4d2ec9d6fdaf40c48bf70ce82bcd8cff);
+            
+    
+            var popup_05d9357194184afeacd92d4ca82d4aaa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c7bdc07d7d604247998033cfa2394378 = $(`<div id="html_c7bdc07d7d604247998033cfa2394378" style="width: 100.0%; height: 100.0%;">강남역</div>`)[0];
+                popup_05d9357194184afeacd92d4ca82d4aaa.setContent(html_c7bdc07d7d604247998033cfa2394378);
+            
+
+            marker_93884789594441a8bc16f4eb2b859da0.bindPopup(popup_05d9357194184afeacd92d4ca82d4aaa)
+            ;
+
+            
+        
+</script>
