@@ -8,6 +8,8 @@ root.geometry("640x400+100+100")
 root.resizable(True, True)
 
 state_boolean = "disabled"
+# state_menu_11 = "normal"
+# state_menu_12 = "normal"
 
 # Close Fnc
 def close():
@@ -34,13 +36,25 @@ def command_args(argument1, argument2, argument3):
     # Image Options
     label_imgview=tk.Label(root, image=photo)
     label_imgview.pack()
+    
+def command_menu_one(self):
+    global state_menu_11, state_menu_12
+    # state_menu_11="normal"
+    # state_menu_12="normal"
+    
+    if self.menu_1['label']=="평일":
+        state_menu_12 = "disabled"
+        # return state_menu_12;
+    else:
+        state_menu_11 = "disabled"
+        # return state_menu_11;
 
 # Menu
 menubar=tk.Menu(root)
 
 menu_1=tk.Menu(menubar, tearoff=0, selectcolor="red")
-menu_1.add_checkbutton(label="평일", command=lambda: command_args(1, 0, 0))
-menu_1.add_checkbutton(label="주말", command=lambda: command_args(2, 0, 0))
+menu_1.add_checkbutton(label="평일", state=normal, command=lambda: command_menu_one)
+menu_1.add_checkbutton(label="주말", state=normal, command=lambda: command_menu_one)
 menu_1.add_separator()
 menu_1.add_command(label="선택 초기화", command=close)
 menubar.add_cascade(label="조사일자", menu=menu_1)
@@ -62,6 +76,8 @@ menu_3.add_checkbutton(label="하행선", background="#0000FF", foreground="whit
 menubar.add_cascade(label="역방향", menu=menu_3)
 
 root.config(menu=menubar)
+
+# 
 
 root.mainloop()
 
