@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['week02_ml\\dataget.py', 'week02_ml\\flags.py']
+recent_files = ['data_gui\\sub_gui.py']
 
